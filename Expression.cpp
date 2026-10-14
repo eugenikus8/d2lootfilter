@@ -320,7 +320,7 @@ int32_t Call::Evaluate(Unit* pItem) const {
         //will return 0 for the stat value. MinIn (min inclusive) will include zeros.
     case Token::MAX:
         return *std::ranges::max_element(args, [](int32_t o1, int32_t o2) {
-            return o1 != 0 && o2 != 0 ? o1 > o2 : false;
+            return o1 < o2;
             });
     case Token::MIN:
         return *std::ranges::min_element(args, [](int32_t o1, int32_t o2) {

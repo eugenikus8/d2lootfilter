@@ -179,7 +179,12 @@ void ItemFilter::RunRules(Unit* pItem) {
 }
 
 bool ItemFilter::IsItem(Unit* pUnit) {
-	return pUnit != NULL && pUnit->dwUnitType == UnitType::ITEM;
+	__try {
+		return pUnit != NULL && pUnit->dwUnitType == UnitType::ITEM;
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER) {
+		return false;
+	}
 }
 
 bool ItemFilter::HasActions(Unit* pUnit) {
