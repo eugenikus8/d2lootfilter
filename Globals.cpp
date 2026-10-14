@@ -127,9 +127,15 @@ const utility::string_umap<std::wstring, std::wstring> CustomStats = {
 	STAT("Faster Hit Recovery", Stat(99)),
 	STAT("Faster Run Walk", Stat(96)),
 	STAT("Faster Block Rate", Stat(102)),
-	STAT("Life", Stat(7)),
-	STAT("Mana", Stat(9)),
-	STAT("Requirements", Stat(91)),
+	STAT("Life", Stat(7)),						//
+	STAT("Mana", Stat(9)),						//
+	STAT("Stamina", Stat(11)),					//
+	STAT("Life Per Level", Stat(216)),			//
+	STAT("Mana Per Level", Stat(217)),			//
+	STAT("Life Leech", Stat(60)),				//
+	STAT("Crushing Blow", Stat(136)),			//
+	STAT("Life Regen", Stat(74)),				//
+	STAT("Requirements", Stat(91)),				//
 	STAT("Required Level", Stat(92)),
 	STAT("Magic Find", Stat(80)),
 	STAT("Gold Find", Stat(79)),
