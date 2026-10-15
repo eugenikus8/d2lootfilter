@@ -17,7 +17,7 @@ enum class ConditionType : uint8_t {
 };
 
 static const wchar_t* CONDITIONS[] = { L"", L"Code", L"Type", L"PlayerClass", L"Class", L"Rarity", L"Ethereal", L"Runeword", L"Prefix", L"Suffix", L"ItemLevel", L"Quality", L"AreaLevel", L"CharacterLevel",
-	L"Difficulty", L"Rune", L"Id", L"Gold", L"Stats", L"Defense", L"Armor", L"Weapon", L"Price", L"Quantity",L"Mode", L"Identified", L"Sockets", L"Width", L"Height", L"Random", L"Owned", L"HasWeight" };
+	L"Difficulty", L"Rune", L"Id", L"Gold", L"Stats", L"Defense", L"Armor", L"Weapon", L"Price", L"Quantity", L"Mode", L"Identified", L"Sockets", L"Width", L"Height", L"Random", L"Owned", L"HasWeight" };
 
 class Condition {
 protected:
